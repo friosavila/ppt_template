@@ -90,6 +90,28 @@ save the file as suggested_figure1.png
 
 Note: This table only shows the dummy for gender gap across different specifications. Table may need to be built Manually.
 
+<!--
+Example of a different table that can be generated using the following code, but has similar structure to the one above.
+reg lnwage female
+est sto m1
+
+reg lnwage female educ age agesq
+estadd local demo "yes"
+est sto m2
+
+reg lnwage female educ age agesq exper tenure i.isco
+estadd local demo "yes"
+estadd local job_char "yes"
+est sto m3
+
+reg lnwage female educ age agesq exper tenure i.isco married divorced kids6 kids714
+estadd local demo "yes"
+estadd local job_char "yes"
+estadd local fam_stat "yes" 
+est sto m4
+
+esttab m1 m2 m3 m4, keep(female) scalar(demo job_char fam_stat) se nomtitle
+-->
 
 ## Occupational Segregation
 
