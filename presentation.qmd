@@ -1,0 +1,115 @@
+---
+title: "Gender Wage Gap in Swiss Labor Market"
+author: "Your Name Goes Here"
+format: 
+  revealjs:
+    theme: [default, clean2.scss]
+    slide-number: true
+    show-slide-number: all
+    width:  1000  
+    height: 600
+---
+
+## Gender Wage Gap in Switzerland 
+
+Typically your intro and motivation.
+
+- Persistent challenge in the Swiss labor market
+- Analysis based on comprehensive labor market data
+- Focus on structural determinants and potential solutions
+
+## Some Lit Review on the topic
+
+- gender wage gap in Switzerland is a well-documented phenomenon. 
+  - Rios-Rull and Zhang (2018) found that the wage gap in Switzerland is one of the highest in Europe.
+  - According to the Swiss Federal Statistical Office (FSO), the unconditional gender wage gap is around 16%.
+   
+## Data Overview
+
+- Sample of 1,647 Swiss workers
+- Key variables:
+  - Hourly wages (log-transformed)
+  - Education (years)
+  - Work experience
+  - Job tenure
+  - Occupational categories (ISCO)
+  - Demographics (age, marital status, children)
+
+## Descriptive Statistics 
+
+| Variable | Women | Men | Gap |
+|----------|-------|-----|-----|
+| Average hourly wage (CHF) | 28.7 | 34.2 | -16.1% |
+| Years of education | 11.2 | 11.6 | -0.4 |
+| Work experience | 12.1 | 14.3 | -2.2 |
+| Job tenure | 6.9 | 8.9 | -2.0 |
+
+Note: Suggested table based on sample statistics
+
+<!--
+This here is a comment block. It will not be rendered in the final output.
+I can add a code of how the table was generated. for example.
+The easiest option is to "past them" in Markdown format.
+
+
+code:
+ssc install frause
+frause oaxaca, clear
+label define female 0 "Men" 1 "Women", modify
+label values female female
+estpost tabstat lnwage educ exper tenure , by(female) columns(statistics)
+esttab using table1.txt, cell(mean) unstack nomtitle nonumber collabel(none) noobs md
+
+and include it here using
+
+`{{< include table1.txt >}}` (without the backticks)
+
+
+-->
+
+## Raw Wage Gap Analysis
+
+![Wage Distribution by Gender](suggested_figure1.png)
+
+<!--
+for example this is generated using the following
+two (kdensity lnwage if female == 0) (kdensity lnwage if female == 1) , legend(order(1 "Men" 2 "women"))
+
+save the file as suggested_figure1.png
+
+-->
+
+## Adjusted Wage Gap  
+
+| Model | Unadjusted Gap | Adjusted Gap | % Explained |
+|-------|----------------|--------------|-------------|
+| Base | -16.1% | - | - |
+| + Human Capital | -16.1% | -12.3% | 23.6% |
+| + Job Characteristics | -16.1% | -9.7% | 39.8% |
+| + Family Status | -16.1% | -8.4% | 47.8% |
+
+Note: This table only shows the dummy for gender gap across different specifications. Table may need to be built Manually.
+
+
+## Occupational Segregation
+
+- Women are overrepresented in:
+  - Lower-paying occupations
+  - Part-time positions
+  - Service sector jobs
+- Vertical segregation remains significant
+- Glass ceiling effects persist
+
+## Policy Implications
+
+1. Transparent wage policies
+2. Family-friendly work arrangements
+3. Career development programs
+4. Anti-discrimination measures
+5. Early education initiatives
+
+## Conclusion
+
+- Wage gap in Switzerland is a complex issue
+- Requires multi-faceted policy interventions
+- Structural changes are necessary

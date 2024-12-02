@@ -1,0 +1,95 @@
+---
+title: "Gender Wage Gap in Switzerland"
+author: "Analysis Report"
+format: 
+  revealjs:
+    theme: simple
+    transition: slide
+---
+
+## Overview
+
+- Switzerland's journey towards wage equality
+- Current state of gender pay gap
+- Key contributing factors
+- Policy implications and recommendations
+
+## Historical Context
+
+- Evolution of women's participation in Swiss workforce
+- Key milestones in equal pay legislation
+- Historical trends in wage disparity
+
+![Historical Trend of Gender Wage Gap in Switzerland (1995-2022)](images/historical_trend.png)
+
+## Current Statistics
+
+::: {.columns}
+::: {.column width="50%"}
+| Year | Raw Gap (%) | Adjusted Gap (%) |
+|------|-------------|------------------|
+| 2018 | 19.6 | 8.1 |
+| 2019 | 19.0 | 8.0 |
+| 2020 | 18.4 | 7.8 |
+| 2021 | 18.0 | 7.7 |
+| 2022 | 17.8 | 7.6 |
+:::
+
+::: {.column width="50%"}
+![Current Wage Gap by Age Groups](images/age_groups.png)
+:::
+:::
+
+## Contributing Factors
+
+| Factor | Impact Level | Description |
+|--------|-------------|-------------|
+| Part-time Work | High | 58.6% of women vs 17.9% of men work part-time |
+| Career Breaks | Medium | Average 3.7 years break for women after children |
+| Industry Choice | High | Women: 76% in service sector, Men: 68% |
+| Leadership Roles | High | Women hold 34.5% of management positions |
+
+## Sectoral Analysis
+
+| Economic Sector | Wage Gap (%) | Women's Share (%) |
+|----------------|--------------|------------------|
+| Financial Services | 28.3 | 39.2 |
+| Healthcare | 16.5 | 76.8 |
+| Manufacturing | 22.1 | 28.4 |
+| Public Sector | 12.3 | 54.6 |
+
+![Wage Gap Distribution by Economic Sector](images/sector_analysis.png)
+
+## Regional Variations
+
+::: {.columns}
+::: {.column width="60%"}
+![Cantonal Wage Gap Differences](images/swiss_map.png)
+:::
+
+::: {.column width="40%"}
+| Canton | Gap (%) |
+|--------|---------|
+| Zürich | 16.8 |
+| Geneva | 15.2 |
+| Basel | 17.1 |
+| Bern | 14.9 |
+| Vaud | 15.7 |
+:::
+:::
+
+## Policy Measures & Recommendations
+
+| Policy Area | Current Status | Target 2025 |
+|------------|----------------|-------------|
+| Pay Transparency | Partial | Mandatory |
+| Parental Leave | 14 weeks | 20 weeks |
+| Gender Quotas | 30% boards | 40% boards |
+| Childcare Support | Limited | Comprehensive |
+
+## References
+
+- Swiss Federal Statistical Office
+- State Secretariat for Economic Affairs (SECO)
+- Academic research papers
+- International Labor Organization (ILO)
