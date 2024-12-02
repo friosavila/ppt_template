@@ -4,6 +4,7 @@ author: "Your Name Goes Here"
 format: 
   revealjs:
     theme: [default, clean2.scss]
+    embed-resources: true
     slide-number: true
     show-slide-number: all
     width:  1000  
